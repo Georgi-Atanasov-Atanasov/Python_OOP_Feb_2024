@@ -1,5 +1,5 @@
 def choice_pattern():
-    pattern = input('Choice type of pattern ->\n- Triangle\n- Rombus\n- Square\nPattern choice: ')
+    pattern = input('Choice type of pattern ->\n- Triangle\n- Rhombus\n- Square\nPattern choice: ')
     size_of_pattern = int(input('Enter pattern size: '))
     return pattern, size_of_pattern
 
@@ -10,7 +10,7 @@ def print_pattern_data(space_data, stars_data):
 def get_pattern_data(data):
     pattern, size = data
 
-    if pattern == 'Rombus':
+    if pattern == 'Rhombus':
         for x in range(size):
             space_data = size - x - 1
             stars_data = x + 1
