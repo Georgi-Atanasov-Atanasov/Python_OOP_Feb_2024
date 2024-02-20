@@ -1,6 +1,6 @@
 def choice_pattern():
-    pattern = input('Choice type of pattern ->\n- Triangle\n- Rhombus\n- Square\nPattern choice: ')
-    size_of_pattern = int(input('Enter pattern size: '))
+    pattern = input('Choose a type of pattern ->\n- Triangle\n- Rhombus\n- Square\nPattern choice: ')
+    size_of_pattern = int(input('Enter the pattern size: '))
     return pattern, size_of_pattern
 
 
