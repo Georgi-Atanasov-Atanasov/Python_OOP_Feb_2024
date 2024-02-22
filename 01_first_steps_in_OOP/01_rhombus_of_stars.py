@@ -1,7 +1,11 @@
-def choice_pattern():
-    pattern = input('Choose a type of pattern ->\n- Triangle\n- Rhombus\n- Square\nPattern choice: ')
-    size_of_pattern = int(input('Enter the pattern size: '))
-    return pattern, size_of_pattern
+def choose_pattern():
+    pattern = input('Choose a type of pattern from the list: \n- Triangle\n- Rhombus\n- Square\nPattern choice: ')
+    if pattern == "Triangle" or pattern == "Square" or pattern == "Rhombus":
+        size_of_pattern = int(input('Enter the pattern size: '))
+        return pattern, size_of_pattern
+    else:
+        print("Invalid pattern! The chosen pattern is not in the list.")
+        exit()
 
 
 def print_pattern_data(space_data, stars_data):
@@ -31,4 +35,5 @@ def get_pattern_data(data):
             print_pattern_data(0, size)
 
 
-get_pattern_data(choice_pattern())
+
+get_pattern_data(choose_pattern())
